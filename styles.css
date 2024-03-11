@@ -1,0 +1,103 @@
+@import url("assets/fonts/fonts.css");
+:root {
+    /* So I can easily readjust :3 */
+    --primary-color: #1A0F1F;
+    --secondary-color: #3D2B4B;
+    --accent-color: #6F4D73;
+    --text-color: #A391A4;
+    --background-color: #0D080E;
+}
+
+body {
+    background-color: var(--background-color);
+    transition: background-color 0.6s ease;
+}
+
+div {
+    color: var(--secondary-color);
+    transition: color 0.2s ease-in;
+}
+
+button {
+    background-color: var(--primary-color);
+
+    color: var(--text-color);
+    padding: 10px 20px;
+    margin: 5px;
+
+    font-family: 'Poppins', sans-serif;
+
+    border-radius: 25px; 
+    border: 2px solid;
+    border-color: var(--accent-color); 
+    transition: color 0.2s ease-in, background-color 0.2s ease;
+
+    transform: translateY(-30%); /* Offset */
+}
+
+button:hover {
+  background-color: var(--secondary-color); 
+  /*border-color: var(--text-color); */
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.6s ease;
+    font-family: "Poppins", sans-serif;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+h1 {
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+}
+
+h2 {
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+}
+
+h3 {
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif; 
+}
+
+p {
+    color: var(--text-color);
+    font-family: "Roboto", sans-serif; 
+}
+.imgButton {
+    border: 2px solid;
+    border-color: var(--accent-color);
+
+}
+
+.infoObject {
+    border: 4px solid;
+    border-color: var(--accent-color);
+    border-radius: 16px;
+    padding: 10px;
+    transition: border-color 0.2s ease-in;
+}
+
+.infoObject:hover {
+    border-color: var(--secondary-color);
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+
+    overflow: hidden;
+    position: relative;
+    
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    display: flex;
+}

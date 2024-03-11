@@ -1,0 +1,30 @@
+#avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 40px;
+}
+
+.langList a img {
+    width: 50px;
+    height: 50px;
+
+    border: 4px solid;
+    border-color: var(--accent-color);
+    border-radius: 16px;
+    padding: 8px;
+    transition: border-color 0.3s ease-in;
+}
+
+.langList a img:hover {
+    border-color: var(--secondary-color);
+}
+
+#infoTop {
+    display: flex;
+    flex-direction: row;
+}
+
+#infoTop div {
+    padding: 0px 10px;
+    text-align: center;
+}

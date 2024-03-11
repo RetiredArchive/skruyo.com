@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>shiggy</title>
+    <link rel="icon" href="../assets/graphics/shiggy.gif" type="image/x-icon">
+    <link href="../styles.css" rel="stylesheet" type="text/css">
+    <link href="../css/shiggy.css" rel="stylesheet" type="text/css">
+
+    <meta property="og:title" content="Shiggy">
+    <meta property="og:description" content="shiggy">
+    <meta property="og:image" content="https://skruyo.github.io/assets/graphics/shiggy.gif">
+    <link rel="icon" type="image/x-icon" href="assets/graphics/shiggy.gif">
+    <meta property="og:url" content="https://skruyo.github.io/">
+    <meta property="theme-color" content="#6F4D73">
+  </head>
+  <body>
+    <header id="mainheader">
+        <a href="/">home /</a>
+        <a href="../pages/social">/ socials /</a>
+        <a href="../pages/gf">/ gf</a>
+    </header>
+    <div id="container">
+        <div class="infoObject">
+            <div id="infoTop" style="display: flex; align-items: center; flex-direction: column;">
+                <button id="shiggybutton">
+                        press me
+                        <script>
+                            const audio = new Audio("../assets/audio/see_you_again.mp3");
+                            const shiggy = document.createElement("img");
+                            shiggy.src = "../assets/graphics/shiggy.gif";
+                            const element = document.getElementById("shiggybutton");
+                            const container = document.getElementById("infoTop");
+                            element.addEventListener("click", () => {
+                                if (audio.paused) {
+                                    audio.play();
+                                    container.insertBefore(shiggy, container.childNodes[0]);
+
+                                } else {
+                                    audio.pause();
+                                    container.removeChild(shiggy);
+                                }
+                                
+                            });
+                        </script>
+                    </button>
+            </div>
+        </div>
+    </div>
+    </div>
+  </body>
+</html>
