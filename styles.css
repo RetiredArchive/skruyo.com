@@ -88,6 +88,18 @@ p {
     border-color: var(--secondary-color);
 }
 
+textarea {
+	color: var(--text-color);
+	background: var(--primary-color);
+
+	border: 2px solid var(--accent-color);
+	border-radius: 10px;
+	background-color: var(--primary-color);
+	transition: color 0.3s ease-in, background-color 0.3s ease;
+	overflow-y: hidden;
+	resize: none;
+}
+
 #container {
     height: 100%;
     width: 100%;
