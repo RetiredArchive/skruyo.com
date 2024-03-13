@@ -15,7 +15,7 @@
     transition: border-color 0.3s ease-in;
 }
 
-.langList a img:hover {
+.list a img:hover {
     border-color: var(--secondary-color);
 }
 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Skruyo's Website</title>
+    <link href="../styles.css" rel="stylesheet" type="text/css">
+
+    <meta property="og:title" content="Skruyo's Website | Secrets">
+    <meta property="og:description" content="My cool website ">
+    <meta property="og:image" content="https://skruyo.github.io/assets/graphics/skry.png">
+    <link rel="icon" type="image/x-icon" href="assets/graphics/skry.png">
+    <meta property="og:url" content="https://skruyo.github.io/">
+    <meta property="theme-color" content="#6F4D73">
+
+</head>
+
+<body>
+    <header id="mainheader">
+        <a href="/">home /</a>
+        <a href="../pages/social">/ socials /</a>
+        <a href="../pages/gf">/ gf</a>
+    </header>
+    <div id="container">
+        <div class="infoObject">
+            <textarea id="input"></textarea>
+            <button id="inputButton">
+                <script>
+                    const input = document.getElementById("input");
+                    const button = document.getElementById("inputButton");
+                    button.addEventListener("click", () => {
+                        readFile(`../pages/secrets/${input.value}.html`, (err, _) => {
+                            if (err) {
+                                throw new Error(err);
+                                return;
+                            }
+                            window.location.href = `https://skruyo.com/pages/secret?file=${input.value}`;
+                        });
+                    }); 
+                </script>
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
