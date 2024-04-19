@@ -1,11 +1,11 @@
 @import url("public/fonts/fonts.css");
 :root {
     /* So I can easily readjust :3 */
-    --primary-color: #1A0F1F;
-    --secondary-color: #3D2B4B;
-    --accent-color: #6F4D73;
-    --text-color: #A391A4;
-    --background-color: #0D080E;
+ --primary-color: #223A5E;
+ --secondary-color: #415D8C;
+ --accent-color: #5488DB;
+ --text-color: #EOE5F2;
+ --background-color: #141F2B;
 }
 
 body {
