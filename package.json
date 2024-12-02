@@ -1,0 +1,23 @@
+{
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-static": "^3.0.6",
+    "@sveltejs/kit": "^2.8.2",
+    "@sveltejs/vite-plugin-svelte": "^2.5.3",
+    "autoprefixer": "^10.4.20",
+    "daisyui": "^4.12.14",
+    "postcss": "^8.4.49",
+    "svelte": "^5.2.7",
+    "tailwindcss": "^3.4.15",
+    "vite": "^5.4.11"
+  },
+  "dependencies": {
+    "saraui": "^1.4.0",
+    "vite-plugin-svelte": "link:sveltejs\\vite-plugin-svelte"
+  }
+}

@@ -1,9 +1,0 @@
-#quotes {
-    display: flex;
-    flex-direction: column;
-}
-#quotes img {
-    
-    max-height: 200px;
-    padding-top: 10px;
-}
