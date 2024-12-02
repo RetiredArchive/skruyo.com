@@ -1,5 +1,5 @@
 <div class="container flex flex-col m-auto  items-center justify-center">        
-    <div class="collapse w-96 bg-base-200 p-10" >
+    <div class="collapse w-96 bg-base-200 p-10 justify-center items-center flex flex-col" >
         <div class="flex w-full flex-col border-opacity-50 justify-center items-center">
             <div class="tooltip" data-tip="Cashapp">
                 <a class="card bg-base-300 rounded-box grid h-40 place-items-center" href="https://cash.app/$Skruyo">
@@ -13,5 +13,6 @@
                 </a>
             </div>
         </div>
+        <p>Donating helps funds projects I want to do!</p>
     </div>
 </div>
