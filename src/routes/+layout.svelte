@@ -3,7 +3,7 @@
 	import { blur } from "svelte/transition";
 	import { SaraProvider } from 'saraui';
 	import Header from "$components/Header.svelte";
-    import NavBar from "$components/NavBar.svelte";
+    	import NavBar from "$components/NavBar.svelte";
 	export let data;
 </script>
 
