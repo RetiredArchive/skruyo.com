@@ -3,7 +3,7 @@
 	let name = "shaggy"; 
 	let petData = []
 	let imageURL = "/graphics/pets/cat.png";
-	let info
+	let info = "";
 	onMount(async () => {
 		const response = await fetch(`/graphics/pets/${name}/data.txt`);
 		petData = (await response.text()).split(":");
@@ -22,7 +22,7 @@
 				alt="" 
 				class="p-12 justify-center size-7/12 cursor-grab" 
 				draggable="false" 
-				src={imageUrl}
+				src={imageURL}
 		/>
 		{#if info != null}
 		<p>{info}</p>
