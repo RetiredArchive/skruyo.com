@@ -1,4 +1,6 @@
 <script>
+	import { onMount } from 'svelte';
+
 	let name = "plank"; 
 	let petData = []
 	let imageURL = "/graphics/pets/cat.png";
