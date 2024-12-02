@@ -13,6 +13,6 @@
                 </a>
             </div>
         </div>
-        <p>Donating helps funds projects I want to do!</p>
+        <p class="m-4 p-2">Donating helps funds projects I want to do!</p>
     </div>
 </div>
