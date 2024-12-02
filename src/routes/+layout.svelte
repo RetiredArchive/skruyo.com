@@ -11,6 +11,8 @@
 <NavBar/>
 {#key data.pathname}
 	<SaraProvider>
-		<slot class="container m-auto justify-center items-center text-center flex" in:blur={{ duration: 300, delay: 400 }} out:blur={{ duration: 300 }}/>
+		<div in:blur={{ duration: 300, delay: 400 }} out:blur={{ duration: 300 }} class="display: content">
+			<slot class="container m-auto justify-center items-center text-center flex"/>
+		</div>
 	</SaraProvider>
 {/key}
