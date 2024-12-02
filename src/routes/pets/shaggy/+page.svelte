@@ -8,7 +8,7 @@
 		petData = (await response.text()).split(":");
 
 		if (petData.length >= 2) {
-			imageURL = `/graphics/pets/${data.pet.name}/${Math.floor(Math.random() * petData[0]) + 1}.${petData[1]}`;
+			imageURL = `/graphics/pets/${name}/${Math.floor(Math.random() * petData[0]) + 1}.${petData[1]}`;
 			info = petData[2];
 		} else 
 			console.error(`No data found for pet: ${name}`); // shouldnt happen
